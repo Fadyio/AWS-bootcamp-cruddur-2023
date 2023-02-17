@@ -36,6 +36,7 @@
 #### secure the root account in aws and Enable AWS multi-factor authentication
 - Enable MFA on the Root account
 - [For more info on how to Enable MFA in AWS](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa_enable_virtual.html)
+
 ![MFA](/journal/Img/week0/MFA.png)
 #### Create an administrative user and Enable AWS multi-factor authentication
 - Create an admin user to minimize root user access to your account [Following Amazon best practices for securing my AWS account and its resources](https://aws.amazon.com/premiumsupport/knowledge-center/security-best-practices/)
