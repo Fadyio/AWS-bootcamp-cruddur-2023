@@ -6,8 +6,8 @@
  - [X] [set up a billing alarm](#set-up-a-billing-alarm)
  - [X] [secure the root account in aws and Enable AWS multi-factor authentication](#secure-the-root-account-in-aws-and-enable-aws-multi-factor-authentication)
  - [X] [Create an administrative user and Enable AWS multi-factor authentication](#create-an-administrative-user-and-enable-aws-multi-factor-authentication)
- - [ ] [Napkin Diagram](#napkin-diagram)
- - [ ] [Recreate Logical Architectual Diagram in Lucid Charts](#recreate-logical-architectual-diagram-in-lucid-charts)
+ - [X] [Napkin Diagram](#napkin-diagram)
+ - [X] [Recreate Logical Architectual Diagram in Lucid Charts](#recreate-logical-architectual-diagram-in-lucid-charts)
  - [ ] [Use CloudShell](#use-cloudshell)
  - [ ] [Generate AWS Credentials](#generate-aws-credentials)
  - [ ] [Installed AWS CLI](#installed-aws-cli)
@@ -42,10 +42,12 @@
 - Attach the administratoraccess policy to the admin user we just created.
 ![Admin](/journal/Img/week0/IAM-Admin.png)
 #### Napkin Diagram
--
-
+![Napkin](/journal/Img/week0/napkin.jpg)
 #### Recreate Logical Architectual Diagram in Lucid Charts
-
+- [The Lucid Charts Link to The Diagram](https://lucid.app/lucidchart/1a6c5bc1-dda4-46a9-9b86-701cabf15d58/edit?viewport_loc=-108%2C216%2C2208%2C1004%2C0_0&invitationId=inv_4097ab4a-18ea-454a-b1cf-c127b8afb91e)
+- Used two availability zones for improving the availability and resilience of the applications and infrastructure.
+- Created public subnet and private subnet for securing the database and the backend and isolate them from the internet and other publicly accessible networks,This can help reduce the risk of attacks and unauthorized access.
+![The Diagram](/journal/Img/week0/Diagram.png)
 #### Use CloudShell
 
 #### Generate AWS Credentials
