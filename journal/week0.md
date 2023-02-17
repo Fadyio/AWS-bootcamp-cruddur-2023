@@ -70,6 +70,7 @@ autoload -Uz compinit && compinit
 ![AWS Credentials](/journal/Img/week0/aws-cli.png)
 #### Destroy your root account credentials Set MFA IAM role
 - I already did that.
+
 ![MFA](/journal/Img/week0/MFA.png)
 #### Use EventBridge to hookup Health Dashboard to SNS and send notification when there is a service health issue.
  <!-- TODO: -->
