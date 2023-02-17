@@ -4,8 +4,8 @@
  - [X] [Generate Github rebo](#generate-github-rebo)
  - [X] [Create a budget](#create-a-budget)
  - [X] [set up a billing alarm](#set-up-a-billing-alarm)
- - [X] [secure the root account in aws and Enable AWS multi-factor authentication (MFA)](#secure-the-root-account-in-aws-and-enable-aws-multi-factor-authentication-(mfa))
- - [X] [Create an administrative user and Enable AWS multi-factor authentication (MFA)](#create-an-administrative-user-and-enable-aws-multi-factor-authentication-(mfa))
+ - [X] [secure the root account in aws and Enable AWS multi-factor authentication](#secure-the-root-account-in-aws-and-enable-aws-multi-factor-authentication)
+ - [X] [Create an administrative user and Enable AWS multi-factor authentication](#create-an-administrative-user-and-enable-aws-multi-factor-authentication)
  - [ ] [Napkin Diagram](#napkin-diagram)
  - [ ] [Recreate Logical Architectual Diagram in Lucid Charts](#recreate-logical-architectual-diagram-in-lucid-charts)
  - [ ] [Use CloudShell](#use-cloudshell)
@@ -33,11 +33,11 @@
 - Creating a billing alarm to monitor your estimated AWS charges
 - [For more info on how to Creating a billing alarm in AWS](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/monitor_estimated_charges_with_cloudwatch.html)
 ![Billing](/journal/Img/week0/billing-alerts.png)
-#### secure the root account in aws and Enable AWS multi-factor authentication (MFA)
+#### secure the root account in aws and Enable AWS multi-factor authentication
 - Enable MFA on the Root account
 - [For more info on how to Enable MFA in AWS](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa_enable_virtual.html)
 ![MFA](/journal/Img/week0/MFA.png)
-#### Create an administrative user and Enable AWS multi-factor authentication (MFA)
+#### Create an administrative user and Enable AWS multi-factor authentication
 - Create an admin user to minimize root user access to your account [Following Amazon best practices for securing my AWS account and its resources](https://aws.amazon.com/premiumsupport/knowledge-center/security-best-practices/)
 - Attach the administratoraccess policy to the admin user we just created.
 ![Admin](/journal/Img/week0/IAM-Admin.png)
