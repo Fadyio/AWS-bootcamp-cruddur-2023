@@ -14,7 +14,7 @@
 
 ###  Homework Challenges For week 0
  - [X] [Destroy your root account credentials, Set MFA, IAM role](#destroy-your-root-account-credentials-set-mfa-iam-role)
- - [ ] [Use EventBridge to hookup Health Dashboard to SNS and send notification when there is a service health issue.](#use-eventbridge-to-hookup-health-dashboard-to-sns-and-send-notification-when-there-is-a-service-health-issue.)
+ - [X] [Use EventBridge to hookup Health Dashboard to SNS and send notification when there is a service health issue](#use-eventbridge-to-hookup-health-dashboard-to-sns-and-send-notification-when-there-is-a-service-health-issue)
  - [X] [Review all the questions of each pillars in the Well Architected Tool](#review-all-the-questions-of-each-pillars-in-the-well-architected-tool)
  - [X] [Create an architectural diagram the CI/CD logical pipeline in Lucid Charts](#create-an-architectural-diagram-the-ci-cd-logical-pipeline-in-lucid-charts)
  - [X] [Research the technical and service limits of specific services and how they could impact the technical path for technical flexibility.](#research-the-technical-and-service-limits-of-specific-services-and-how-they-could-impact-the-technical-path-for-technical-flexibility.)
@@ -23,15 +23,18 @@
 #### Generate Github rebo
 - Generate a new Github Repository from this [template](https://github.com/ExamProCo/aws-bootcamp-cruddur-2023).
 - For more Information you can read [the Github doc](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template)
+
 ![The GitHub repo](/journal/Img/week0/github-repo.png)
 
 #### Create a budget
 - Creating a billing alarm to make sure to not exceed the aws free tier.
 - [For more info on how to Creating a budget in AWS](https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-create.html)
+
 ![Budget](/journal/Img/week0/budget-alarm.png)
 #### Set up a billing alarm
 - Creating a billing alarm to monitor your estimated AWS charges
 - [For more info on how to Creating a billing alarm in AWS](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/monitor_estimated_charges_with_cloudwatch.html)
+
 ![Billing](/journal/Img/week0/billing-alerts.png)
 #### secure the root account in aws and Enable AWS multi-factor authentication
 - Enable MFA on the Root account
@@ -41,17 +44,23 @@
 #### Create an administrative user and Enable AWS multi-factor authentication
 - Create an admin user to minimize root user access to your account [Following Amazon best practices for securing my AWS account and its resources](https://aws.amazon.com/premiumsupport/knowledge-center/security-best-practices/)
 - Attach the administratoraccess policy to the admin user we just created.
+
 ![Admin](/journal/Img/week0/IAM-Admin.png)
 #### Napkin Diagram
+
 ![Napkin](/journal/Img/week0/napkin.jpg)
 #### Recreate Logical Architectual Diagram in Lucid Charts
+
 - [The Lucid Charts Link to The Diagram](https://lucid.app/lucidchart/1a6c5bc1-dda4-46a9-9b86-701cabf15d58/edit?viewport_loc=-108%2C216%2C2208%2C1004%2C0_0&invitationId=inv_4097ab4a-18ea-454a-b1cf-c127b8afb91e)
 - Used two availability zones for improving the availability and resilience of the applications and infrastructure.
 - Created public subnet and private subnet for securing the database and the backend and isolate them from the internet and other publicly accessible networks,This can help reduce the risk of attacks and unauthorized access.
+
 ![The Diagram](/journal/Img/week0/Diagram.png)
 #### Use CloudShell
+
 ![CloudShell](/journal/Img/week0/cloudshell.png)
 #### Generate AWS Credentials
+
 ![AWS Credentials](/journal/Img/week0/Credentials.png)
 
 #### Installed AWS CLI
@@ -67,18 +76,26 @@ autoload bashcompinit && bashcompinit
 autoload -Uz compinit && compinit
 ```
 - To Confirm the installation run
+
 ![AWS Credentials](/journal/Img/week0/aws-cli.png)
 #### Destroy your root account credentials Set MFA IAM role
 - I already did that.
 
 ![MFA](/journal/Img/week0/MFA.png)
-#### Use EventBridge to hookup Health Dashboard to SNS and send notification when there is a service health issue.
- <!-- TODO: -->
+#### Use EventBridge to hookup Health Dashboard to SNS and send notification when there is a service health issue
+- As always [Following the AWS documentation](https://docs.aws.amazon.com/health/latest/ug/cloudwatch-events-health.html)
+
+![EventBridge](/journal/Img/week0/eventbridge1.png)
+![EventBridge](/journal/Img/week0/eventbridge2.png)
+![EventBridge](/journal/Img/week0/eventbridge3.png)
+![EventBridge](/journal/Img/week0/eventbridge4.png)
+![EventBridge](/journal/Img/week0/eventbridge5.png)
 #### Review all the questions of each pillars in the Well Architected Tool
 - Done, I was going to write summary of the 47 questions but I think this will be so much to cover in here.
 
 #### Create an architectural diagram the CI-CD logical pipeline in Lucid Charts
 - [The Lucid Charts Link to The Diagram](https://lucid.app/lucidchart/1a6c5bc1-dda4-46a9-9b86-701cabf15d58/edit?viewport_loc=-108%2C216%2C2208%2C1004%2C0_0&invitationId=inv_4097ab4a-18ea-454a-b1cf-c127b8afb91e)
+
 ![cicd](/journal/Img/week0/cicd.png)
 
 
@@ -87,6 +104,8 @@ autoload -Uz compinit && compinit
 - By default, you can not create more than 20 instances per region, Amazon provides a safety feature in which by default you can not create more than 20 instances in a region. If you have a requirement to create more than 20 instances per region, you need to submit a limit increase request before launching your resources.
 - Also, there are limits on each resource type.
 - It is a good Security practice to limit your instance count as low as possible to prevent malicious actors from creating a ton of instances in your AWS account.
+
 ![limit](/journal/Img/week0/limit.png)
 #### Open a support ticket and request a service limit
+
 ![case](/journal/Img/week0/case.png)
