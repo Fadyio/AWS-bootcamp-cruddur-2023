@@ -6,7 +6,9 @@ COPY . /frontend-react-js
 
 WORKDIR /frontend-react-js
 
-RUN npm install
+RUN npm install && npm install -g react-scripts
+
+
 
 EXPOSE ${PORT}
 
