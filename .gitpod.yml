@@ -20,11 +20,11 @@ tasks:
       cd ..
 # All the ports to expose From https://www.gitpod.io/docs/configure/workspaces/ports
 ports:
-  - name: Frontend prort
+  - name: Backend prort
     description: Backend of The application
     port: 4567
     onOpen: open-browser
-  - name: Backend prort
+  - name: Frontend prort
     description: Frontend of The application
     port: 3000
     onOpen: open-browser
