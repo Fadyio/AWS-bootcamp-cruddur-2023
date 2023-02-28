@@ -2,7 +2,6 @@ openapi: '3.0.2'
 info:
   title: Cruddur Backend API
   version: '1.0'
-    
 servers:
   - url: https://api.server.test/v1
 paths:
@@ -69,7 +68,7 @@ paths:
                 type: object
                 items:
                   $ref: '#/components/schemas/Activity'
-  /api/activities/@{handle}:
+  "/api/activities/@{handle}":
     get:
       description: 'Return a feed of activity for a specific user'
       tags:
@@ -104,7 +103,7 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/MessageGroup'
-  /api/messages/@{handle}:
+  "/api/messages/@{handle}":
     get:
       description: 'Returns private communication between two users'
       tags:
@@ -148,7 +147,21 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/Message'
-
+  /api/activities/notifications:
+    get:
+      description: 'Return a feed of activity for all of those that I follow'
+      tags:
+        - activities
+      parameters: []
+      responses:
+        '200':
+          description: Returns an array of activities
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Activity'
 components:
   schemas:
     Activity:
@@ -208,7 +221,6 @@ components:
         created_at:
           type: string
           example: "2023-02-06T18:11:03+00:00"
-
     Message:
       type: object
       properties:
@@ -239,3 +251,4 @@ components:
         handle:
           type: string
           example: "worf"
+

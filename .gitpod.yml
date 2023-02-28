@@ -18,6 +18,16 @@ tasks:
       cd frontend-react-js
       npm install
       cd ..
+# All the ports to expose From https://www.gitpod.io/docs/configure/workspaces/ports
+ports:
+  - name: Frontend prort
+    description: Backend of The application
+    port: 4567
+    onOpen: open-browser
+  - name: Backend prort
+    description: Frontend of The application
+    port: 3000
+    onOpen: open-browser
 vscode:
   extensions:
     - 42Crunch.vscode-openapi
