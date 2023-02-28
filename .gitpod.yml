@@ -8,6 +8,16 @@ tasks:
       unzip awscliv2.zip
       sudo ./aws/install
       cd $THEIA_WORKSPACE_ROOT
+  - name: install backend
+    init: |
+      cd backend-flask
+      pip3 install -r requirements.txt
+      cd ..
+  - name: install frontend
+    init: |
+      cd frontend-react-js
+      npm install
+      cd ..
 vscode:
   extensions:
     - 42Crunch.vscode-openapi
