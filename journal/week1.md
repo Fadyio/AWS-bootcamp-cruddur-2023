@@ -6,3 +6,4 @@
 ![docker1](/journal/Img/week1/docker1.png)
 - list all the ports in gitpod.yml file, so I don't have to do it manually every time I run the app.
 - Add the notification feature
+![docker2](/journal/Img/week1/docker2.png)
